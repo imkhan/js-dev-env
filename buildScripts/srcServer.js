@@ -9,6 +9,8 @@ let port = 3000
 let app = express()
 const compiler = webpack(config)
 
+/* eslint-disable no-console */
+
 app.use(wdm(compiler, {
   publicPath: config.output.publicPath
 }) )
