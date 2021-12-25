@@ -4,7 +4,11 @@
   "description": "An extensive Javascipt development environment setup.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "node buildScripts/startMessage.js",
+    "start": "node buildScripts/srcServer.js",
+    "localtunnel": "lt --port 3000",
+    "share": "npm-run-all --parallel start localtunnel"
   },
   "repository": {
     "type": "git",
