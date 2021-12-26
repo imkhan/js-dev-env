@@ -1,9 +1,17 @@
 body {
-  color: red;
+  font-family: Helvetica, sans-serif;
 }
 h1 {
+  color: red;
   padding: 1.5em;
   margin: 2em 3em;
   border: 1px solid red;
   border-radius: 10px;
+}
+
+table{
+  margin: 2em 6em;
+}
+table td{
+  padding: 0.5em 2em;
 }
