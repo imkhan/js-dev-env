@@ -15,6 +15,14 @@ app.use(wdm(compiler, {
   publicPath: config.output.publicPath
 }) )
 
+app.get('/users',(req, res)=>{
+  let users = [
+    {"id":1, "firstName":"imran", "lastName":"khan", "email":"ik@cs.com"},
+    {"id":2, "firstName":"atan", "lastName":"babu", "email":"ab@cs.com"},
+    {"id":3, "firstName":"xero", "lastName":"yama", "email":"xy@cs.com"}
+  ]
+  res.json(users)
+})
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '../src/index.html'))
 })
